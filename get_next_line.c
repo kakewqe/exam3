@@ -7,11 +7,11 @@
 char *ft_calloc(int s)
 {
 	int i = 0;
-    char *dest;
+    	char *dest;
 
     	if(s < 0)
         	return(NULL);
-   	 dest = malloc(sizeof(char *) * s);
+   	 dest = malloc(sizeof(char) * s);
     	while(i < s)
     	{
         	dest[i] = '\0';
