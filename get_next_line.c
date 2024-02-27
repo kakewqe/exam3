@@ -34,6 +34,7 @@ int  ft_is_nl(char *str)
     }
     return(0);
 }
+
 int ft_strlen(char *str)
 {
     int i = 0;
@@ -56,7 +57,8 @@ char *ft_strjoin(char *str, char *buff)
         return(NULL);
     if(!buff)
         return(str);
-    dest = ft_calloc(ft_strlen(str) + ft_strlen(buff) +1);
+	
+    dest = ft_calloc(ft_strlen(str) + ft_strlen(buff) + 1);
     while(str[i])
     {
         dest[i] = str[i];
